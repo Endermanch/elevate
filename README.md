@@ -1,5 +1,6 @@
 # Quiet.exe
 🤫 Silently run applications and scripts with an option to elevate them.
+Utilities **quiet** and **elevate** have been merged together.
 
 ### Usage
 Prepend **quiet** to your command line to run the target silently.
