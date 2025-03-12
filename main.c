@@ -23,24 +23,26 @@ INT WINAPI wWinMain(
 	if (wcslen(pCmdLine) == 0)
 		return PrintMessage();
 
-	// Skip spaces at the beginning.
-	while (*pCmdLine == L' ')
-		pCmdLine++;
+	WCHAR *cmdLine = pCmdLine;
 
-	if (wcsnicmp(pCmdLine, L"/E", 2) == 0) {
+	// Skip spaces at the beginning.
+	while (*cmdLine == L' ')
+		cmdLine++;
+
+	if (wcsnicmp(cmdLine, L"/E", 2) == 0) {
 		command = L"runas";
 
-		pCmdLine += 2;
-		while (*pCmdLine++ != L' ');
+		cmdLine += 2;
+		while (*cmdLine++ != L' ');
 	}
 
-	WCHAR *params = pCmdLine;
+	WCHAR *params = cmdLine;
 	USHORT len = 0;
 
-	while (*params++ != L' ') len++;
+	while (*params && *params++ != L' ') len++;
 
 	WCHAR *app = calloc(len + 1, sizeof(WCHAR));
-	memcpy_s(app, len * sizeof(WCHAR), pCmdLine, len * sizeof(WCHAR));
+	memcpy_s(app, len * sizeof(WCHAR), cmdLine, len * sizeof(WCHAR));
 
 	ShellExecuteW(
 		NULL,
