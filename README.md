@@ -16,7 +16,7 @@ The command line switches are case-insensitive.
 <a href="https://dl.malwarewatch.org/software/useful/utilities/quiet.exe"><img src="https://dl.malwarewatch.org/theme/images/download.png" alt="Download" width="64"></a>
 <p>
   Click above icon to download <b>quiet.exe</b><br />
-  <b>SHA256:</b> be50c9a8f6975e4a422557d5c29bf5b81407782d2a0cbb72056d18c39339b8aa
+  <b>SHA256:</b> dd85bc02e4134084d862689e3641638e7152bf66b6b7809777772eaa2307097d
 </p>
 
 ### Bugs
