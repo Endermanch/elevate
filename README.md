@@ -6,7 +6,7 @@ Utilities **quiet** and **elevate** have been merged together.
 Prepend **quiet** to your command line to run the target silently.
 The command line switches are case-insensitive.
 
-`QUIET [/E] C:\\Windows\\Application.exe [ARGS]`
+`QUIET [/E] C:\Windows\Application.exe [ARGS]`
 
 | Switch | Meaning                      |
 |--------|------------------------------|
